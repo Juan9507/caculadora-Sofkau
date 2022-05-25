@@ -9,15 +9,15 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         Logger logger = Logger.getLogger(Main.class.getName());
         float result;
-        logger.info("Ingrese el primer número (A): ");
+        logger.info("Ingrese el primer numero (A): ");
         String valueA = scanner.nextLine();
 
-        logger.info("Ingrese el segundo número (B): ");
+        logger.info("Ingrese el segundo numero (B): ");
         String valueB = scanner.nextLine();
 
-        logger.info("Ingrese operación que desee realizar: "
+        logger.info("Ingrese operacion que desee realizar: "
                 + "\n+: suma (A + B)\n-: resta (A - B)\n"
-                + "/: división (A / B)\n*: multiplicación (A * B)");
+                + "/: division (A / B)\n*: multiplicacion (A * B)");
         String operation = scanner.nextLine();
 
         switch (operation) {
@@ -36,7 +36,7 @@ public class Main {
             default:
                 result = 0;
         }
-        
+        logger.info(() -> "La operacion realizada fue: " + valueA + operation + valueB);
         logger.info(() -> "El resultado es: " + result);
     }
 }
