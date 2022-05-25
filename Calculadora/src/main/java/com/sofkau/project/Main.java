@@ -3,8 +3,23 @@ package com.sofkau.project;
 import java.util.Scanner;
 import java.util.logging.Logger;
 
+/**
+ * [
+ *  Taller pair programming de una calculadora simple
+ *      - ingresar los numeros y elegir el operador
+ * ]
+ * 
+ * 
+ * @author [Juan David rivera] - [Sebastian Barrera]
+ * @version [v1.0.0]
+ * @since [v1.0.0]
+ */
 public class Main {
-
+    
+    /**
+     * Metodo principal para compilar el programar
+     * @param args 
+     */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Logger logger = Logger.getLogger(Main.class.getName());
